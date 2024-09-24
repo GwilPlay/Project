@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #7E5E60;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #EFE5DE;
+    color: #7E5E60;
+    font-family: Cormorant Garamond;
+}
+
+@font-face {
+    font-family: Cormorant Garamond;
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Cormorant Garamond;
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1322px;
+    margin: 0 auto;
+    @media (max-width: 1025px) {
+        max-width: 974px;
+    }
+}
+
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+    &__menu{
+        display: flex;
+        max-width: 40px;
+        padding: 13px 0;
+    }
+    &__submenu{
+        display: flex;
+        gap: 30px;
+    }
+    &__search{
+        max-width: 332px;
+        max-height: 33px;
+        margin: 7px;
+        background-color: #D9D9D9;
+        border-radius: 20px;
+        display: flex;
+        gap: 230px;
+        align-items: center;
+        padding: 7px 27px;
+        &-text{
+            color: #7E5E60;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &-lupa{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.main{
+    background: url(../img/bg.png) no-repeat center center / cover;
+    &__wrap{
+      display: flex;
+      flex-direction: column;
+      padding-top: 105px;
+    }
+    &__text{
+        max-width: 757px;
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__buttons{
+        margin-top: 34px;
+        margin-bottom: 195px;
+    }
+    &__btn{
+        background-color: #EFE5DE;
+        padding: 35px 62px;
+        border-radius: 40px;
+        border: none;
+        &-a{
+            font-size: 45px;
+            font-weight: 700;
+            color: #7E5E60;
+        }
+    }
+}
+
+.footer{
+    background-color: #C7B1A1;
+    &__wrap{
+        padding-top: 47px;
+        padding-bottom: 22px;
+        display: flex;
+    }
+    &__logo{
+        @media (max-width: 1025px){
+            img{
+                width: 147px; 
+            }
+        }
+    }
+    &__info{
+        margin-top: 19px;
+        max-width: 157px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__text{
+        font-size: 9px;
+        font-weight: 400;
+        margin-top: 13px;
+    }
+    &__social{
+        margin-left: 113px;
+        margin-top: 18px;
+        @media (max-width: 1025px){
+            margin-left: 61px;
+        }
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__cards{
+        display: flex;
+        margin-top: 10px;
+        align-items: end;
+    }
+    &__card{
+        height: 20px;
+        width: 20px;
+    }
+    &__texts{
+        margin-left: 3px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+    &__link{
+        margin-top: 25px;
+        margin-left: 113px;
+        @media (max-width: 1025px){
+            margin-left: 61px;
+        }
+        &-text{
+            font-size: 9px;
+            font-weight: 400;
+            &_1{
+                margin-top: 12px;
+            }
+        }
+    }
+    &__review{
+        margin-left: 86px;
+        @media (max-width: 1025px){
+            margin-left: 20px;
+        }
+        &-title{
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 44px;
+            &-1{
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 104px;
+            }
+        }
+        &-subtitle{
+            display: flex;
+        }
+        &-cards{
+            background-color: #D9D9D9;
+            border-radius: 50px;
+            padding: 3px 30px 15px 30px;
+        }
+        &-img{
+            @media (max-width: 1025px){
+                width: 70px;
+            }
+        }
+        &-card{
+            background-color: #fff;
+            text-align: center;
+            padding: 15px 25px;
+            border-radius: 50px;
+            @media (max-width: 1025px){
+                padding: 8px 20px;
+                margin-left: 5px;
+            }
+        }
+        &-text{
+            max-width: 250px;
+            font-size: 11px;
+            font-weight: 400;
+            @media (max-width: 1025px){
+                max-width: 180px;
+            }
+        }
+    }
+    &__confid{
+        font-size: 9px;
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
+}
+
+.cart{
+    &__wrap{
+        margin-top: 50px;
+        display: flex;
+    }
+    &__title{
+        font-size: 60px;
+        font-weight: 400;
+    }
+    &__subtitle{
+        color: rgba($color: #7E5E60, $alpha: 0.5);
+        font-size: 60px;
+        font-weight: 400;
+        margin-top: 320px;
+        margin-left: 160px;
+        padding-bottom: 380px;
+        @media (max-width: 1025px){
+            margin-top: 234px;
+            margin-left: 30px;
+        }
+    }
+}
+
+.profile{
+    &__wrap{
+        display: flex;
+    }
+    &__title{
+        margin-top: 35px;
+        font-size: 70px;
+        font-weight: 400;
+    }
+    &__info{
+        margin-top: 79px;
+        margin-bottom: 150px;
+    }
+    &__subtitle{
+        &-info{
+            padding: 15px 230px 11px 11px;
+            margin-top: 36px;
+        }
+        &-info1{
+            padding: 15px 230px 11px 11px;
+            margin-top: 151px;
+        }
+        &-info2{
+            padding: 15px 230px 11px 11px;
+        }
+    }
+    &__contact{
+        margin-top: 79px;
+        margin-left: 142px;
+    }
+}
+
+.cards{
+    &__wrap{
+        padding-bottom: 89px;
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        border-radius: 20px;
+        max-width: 200px;
+        max-height: 300px;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 63px;
+        padding: 5px;
+        &-1{
+            @media (max-width: 1025px){
+                display: none;
+            }
+        }
+    }
+    &__img{
+        border-radius: 20px;
+        &-1{
+            margin: 34px 0;
+        }
+        &-2{
+            margin: 19px 0;
+        }
+        &-3{
+            margin: 19px 0;
+        }
+        &-4{
+            margin: 0px 10px;
+        }
+    }
+}
